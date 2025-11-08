@@ -108,6 +108,7 @@ nav i {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2.5rem;
 }
 .card img{
   width: 23rem;
@@ -149,13 +150,56 @@ hr {
 .view3{
   background-color: white;
   width: 100%;
-  padding: 2.5rem 3rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  
   
 }
 .view3 .card{
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.view3 .top img{
+  width: 22rem;
+}
+.view3 .about{
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.view3 h2{
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-size: 3rem;
+  font-weight: 600;
+}
+.view3 p{
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  
+}
+.view3 button{
+  padding: 0.8rem 2.3rem;
+  border: 2px solid rgba(47, 118, 249, 0.829);
+  border-radius: 1.8rem;
+  color: rgb(59, 59, 234);
+  background-color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+}
+.view3 a{
+  text-decoration: none;
+  color: black;
+  padding-left: 1.5rem;
+  font-weight: 600;
 }
 
 @media(min-width: 1024px) {
@@ -171,7 +215,7 @@ hr {
     gap: 4.5rem;
   }
 
-  .top img {
+  .view1 .top img {
     width: 50%;
   }
 
@@ -183,14 +227,15 @@ hr {
     line-height: 4.4rem;
   }
 
-  .bottom h2 {
+  .view1.bottom h2 {
     padding: 0rem 6rem;
     font-size: 2.2rem;
   }
 
   .view2 {
     flex-direction: row;
-    padding: 2rem 11rem;
+    padding: 2rem 8rem;
+    
   }
   hr{
     width: 18rem;
@@ -214,6 +259,33 @@ hr {
     margin-bottom: 3.4rem;
   }
   .view2 .bottom img{
-    width: 17rem;
+    width: 20rem;
+  }
+  .view2 .bottom{
+    margin-bottom: 5rem;
+  }
+  .view3{
+    padding: 2rem 11rem;
+    flex-direction: row-reverse;
+  }
+  .view3 .card{
+    flex-direction: row-reverse;
+
+  }
+  .view3 .top{
+    width: 50%;
+  } 
+  .view3 .top img{
+    width: 29rem;
+  }
+  .view3 .bottom{
+    width: 50%;
+  }
+  .view3 button{
+    display: inline-block;
+  }
+
+  .view3 p{
+   width: 80%;
   }
 }
