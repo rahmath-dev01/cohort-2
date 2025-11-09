@@ -1,0 +1,62 @@
+@font-face {
+  font-family: marvel;
+  src: url(./Hangyaku-G3rpg.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+main section {
+  height: 100%;
+  width: 100px;
+  background-color: rgb(238, 28, 28);
+  flex-grow: 1;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+main h1 {
+  font-size: 40px;
+  width: 100%;
+  color: white;
+  padding: 10px;
+  font-family: marvel;
+  font-weight: 400;
+  background: linear-gradient(transparent, black);
+  border-radius: 10px;
+}
+main section:hover {
+  flex-grow: 2;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+main section:nth-child(1) {
+  background-image: url(https://i.pinimg.com/736x/ab/eb/ce/abebced757dc87a4131b2f64ee1b3b47.jpg);
+}
+main section:nth-child(2) {
+  background-image: url(https://i.pinimg.com/736x/97/0b/85/970b85bbff95604844913989001f1773.jpg);
+}
+main section:nth-child(3) {
+  background-image: url(https://i.pinimg.com/736x/40/25/20/402520f773de7822faec12dfb6f004fe.jpg);
+}
+main section:nth-child(4) {
+  background-image: url(https://i.pinimg.com/1200x/b4/24/2d/b4242d9e2201c238746e79e0ce46b107.jpg);
+}
+main section:nth-child(5) {
+  background-image: url(https://i.pinimg.com/736x/10/b5/37/10b537b5c45040646fa1cfb0da3c8fe8.jpg);
+}/*# sourceMappingURL=style.css.map */
